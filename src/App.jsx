@@ -33,7 +33,7 @@ const App = () => {
             </AppBar>
             <main>
                 <div>
-                    <Container maxWidth="sm">
+                    <Container align="center" maxWidth="md">
                         <Typography variant="h2" align="center" color="textPrimary" gutterBottom>
                             Photo Album
                         </Typography>
@@ -41,15 +41,25 @@ const App = () => {
                             Hello everyone This is a photo album and I'm trying to make this sentence as long as possible so we can see what it looks like on the screen
                         </Typography>
                         <div>
-                            <Grid container spacing={2} align="center" justify="center">
+                            <Grid container spacing={2} justifyContent="center">
                                 <Grid item>
                                     <Button variant="contained" color="primary">
-                                        See my photos
+                                        First option
+                                    </Button>
+                                </Grid>
+                                <Grid item>
+                                    <Button variant="outlined" color="secondary">
+                                        Secondary Option
                                     </Button>
                                 </Grid>
                                 <Grid item>
                                     <Button variant="outlined" color="primary">
-                                        Secondary Option
+                                        Third Option
+                                    </Button>
+                                </Grid>
+                                <Grid item>
+                                    <Button variant="outlined" color="secondary">
+                                        Fourth Option
                                     </Button>
                                 </Grid>
                             </Grid>
