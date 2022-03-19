@@ -1,18 +1,31 @@
-import React from 'react';
-import { Typography, AppBar, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container } from '@material-ui/core'
-import { PhotoCamera } from '@material-ui/icons'
-
-
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
+import PhotoCameraIcon from '@mui/icons-material/PhotoCamera';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import CssBaseline from '@mui/material/CssBaseline';
+import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
+import Link from '@mui/material/Link';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+// import Button from '@mui/material/Button';
+// import ButtonGroup from '@mui/material/ButtonGroup';
 
 const App = () => {
     return (
         <>
             <CssBaseline />
-            <AppBar>
+            <AppBar position="relative">
                 <Toolbar>
-                    <PhotoCamera />
+                    <PhotoCameraIcon />
                     <Typography variant="h6">
                         Photo Album
                     </Typography>
@@ -27,6 +40,20 @@ const App = () => {
                         <Typography variant="h5" align="center" color="textSecondary" paragraph>
                             Hello everyone This is a photo album and I'm trying to make this sentence as long as possible so we can see what it looks like on the screen
                         </Typography>
+                        <div>
+                            <Grid container spacing={2} align="center" justify="center">
+                                <Grid item>
+                                    <Button variant="contained" color="primary">
+                                        See my photos
+                                    </Button>
+                                </Grid>
+                                <Grid item>
+                                    <Button variant="outlined" color="primary">
+                                        Secondary Option
+                                    </Button>
+                                </Grid>
+                            </Grid>
+                        </div>
                     </Container>
                 </div>
             </main>
