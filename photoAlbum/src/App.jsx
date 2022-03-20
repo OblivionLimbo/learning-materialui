@@ -15,9 +15,10 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+// import { AppBar, Button, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Typography, Container } from '@mui/material' > Requires more | Loads more
 import './styles.css';
 
-const cards = [1,2,3,4,5,6,7,8,9];
+const cards = [1,2,3,4];
 
 const App = () => {
 
